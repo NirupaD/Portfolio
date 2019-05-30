@@ -1,23 +1,9 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/*Dimension by HTML5 UP | html5up.net | @ajlkn | Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)*/
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -37,27 +23,9 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+/* controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property */
 body {
 	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
 }
 
 input::-moz-focus-inner {
@@ -95,7 +63,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #1c1c1c;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -140,14 +108,14 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
+		color: #e6e7e8;
+		font-family: "IBM Plex Sans", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
 	}
 
-	a {
+	a { /* this applies to the link at the bottom */
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -162,7 +130,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #D5A001;
 		font-weight: 600;
 	}
 
@@ -174,8 +142,8 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+	h1, h2, h3 {
+		color: #D5A001;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -183,13 +151,13 @@ input, select, textarea {
 		letter-spacing: 0.2rem;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h3 a{
 			color: inherit;
 			text-decoration: none;
 		}
 
-		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+		h1.major, h2.major, h3.major{
+			border-bottom: solid 1px #e6e7e8;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -214,18 +182,6 @@ input, select, textarea {
 		font-size: 1rem;
 	}
 
-	h4 {
-		font-size: 0.8rem;
-	}
-
-	h5 {
-		font-size: 0.7rem;
-	}
-
-	h6 {
-		font-size: 0.6rem;
-	}
-
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -240,70 +196,10 @@ input, select, textarea {
 
 	}
 
-	sub {
-		font-size: 0.8rem;
-		position: relative;
-		top: 0.5rem;
-	}
-
-	sup {
-		font-size: 0.8rem;
-		position: relative;
-		top: -0.5rem;
-	}
-
-	blockquote {
-		border-left: solid 4px #ffffff;
-		font-style: italic;
-		margin: 0 0 2rem 0;
-		padding: 0.5rem 0 0.5rem 2rem;
-	}
-
-	code {
-		background: rgba(255, 255, 255, 0.075);
-		border-radius: 4px;
-		font-family: "Courier New", monospace;
-		font-size: 0.9rem;
-		margin: 0 0.25rem;
-		padding: 0.25rem 0.65rem;
-	}
-
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9rem;
-		margin: 0 0 2rem 0;
-	}
-
-		pre code {
-			display: block;
-			line-height: 1.75;
-			padding: 1rem 1.5rem;
-			overflow-x: auto;
-		}
-
-	hr {
-		border: 0;
-		border-bottom: solid 1px #ffffff;
-		margin: 2.75rem 0;
-	}
-
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
-
 /* Form */
 
 	form {
-		margin: 0 0 2rem 0;
+		margin: 0 0 2rem 0; /* puts space btwn sm btns and form */
 	}
 
 		form > :last-child {
@@ -375,7 +271,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #e6e7e8;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -385,12 +281,7 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
+	input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select, textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -401,7 +292,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
-		border: solid 1px #ffffff;
+		border: solid 1px #e7e8e9;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -426,126 +317,16 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: #e7e8e9;
+			box-shadow: 0 0 0 1px #e6e7e8;
 		}
 
-	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23ffffff' /%3E%3C/svg%3E");
-		background-size: 1.25rem;
-		background-repeat: no-repeat;
-		background-position: calc(100% - 1rem) center;
-		height: 2.75rem;
-		padding-right: 2.75rem;
-		text-overflow: ellipsis;
-	}
-
-		select option {
-			color: #ffffff;
-			background: #1b1f22;
-		}
-
-		select:focus::-ms-value {
-			background-color: transparent;
-		}
-
-		select::-ms-expand {
-			display: none;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select {
+	input[type="text"], input[type="password"], input[type="email"] {
 		height: 2.75rem;
 	}
 
 	textarea {
 		padding: 0.75rem 1rem;
-	}
-
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2rem;
-		opacity: 0;
-		width: 1rem;
-		z-index: -1;
-	}
-
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
-			text-decoration: none;
-			-moz-user-select: none;
-			-webkit-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-			color: #ffffff;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 0.8rem;
-			font-weight: 300;
-			margin: 0 0 0.5rem 0;
-			padding-left: 2.65rem;
-			padding-right: 0.75rem;
-			position: relative;
-		}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-			}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-				-webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-				-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-				transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-				border-radius: 4px;
-				border: solid 1px #ffffff;
-				content: '';
-				display: inline-block;
-				height: 1.65rem;
-				left: 0;
-				line-height: calc(1.58125rem + 0em);
-				position: absolute;
-				text-align: center;
-				top: -0.125rem;
-				width: 1.65rem;
-			}
-
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
-			background: #ffffff !important;
-			border-color: #ffffff !important;
-			color: #1b1f22;
-			content: '\f00c';
-		}
-
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
-		}
-
-	input[type="checkbox"] + label:before {
-		border-radius: 4px;
-	}
-
-	input[type="radio"] + label:before {
-		border-radius: 100%;
 	}
 
 	::-webkit-input-placeholder {
