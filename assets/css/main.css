@@ -450,6 +450,17 @@ input, select, textarea {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	color: #1c1c1c;
+}
+#flexpholio .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 350px;
+	width: 430.587px;
+	margin: 4px;
+	background: #e6e7e8;
 }
 #flexpholio img{
 	margin: 5px;
@@ -473,7 +484,7 @@ input, select, textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -200%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -491,6 +502,14 @@ input, select, textarea {
 .middle button:hover{
 	background-color: #1b1f22;
 	border: 1px solid #D5A001;	
+}
+.aboutProject{
+	/* background-color: #D5A001; */
+	width: 420.587px;
+	height: 37%;
+	margin: 5px;
+	padding: 5px;
+	text-indent: 1.5rem;
 }
 
 		@media screen and (max-width: 736px) {
@@ -824,6 +843,7 @@ input, select, textarea {
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
 		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
